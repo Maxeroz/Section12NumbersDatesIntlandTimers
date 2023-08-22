@@ -252,6 +252,9 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 // LECTURES
 
+/*
+/////////////////////////////////////////////////
+// Converting and Checking Numbers
 console.log(23 === 23.0);
 
 // Base 10 - 0 to 9. 1/10 = 0.1. 3/10 = 3,3333333
@@ -282,6 +285,8 @@ console.log(Number.isInteger('23'));
 console.log(Number.isFinite(+'23X'));
 console.log(Number.isFinite(23 / 0));
 
+/////////////////////////////////////////////////
+// Math and Rounding
 console.log(Math.sqrt(25));
 console.log(25 ** (1 / 2));
 console.log(8 ** (1 / 3));
@@ -323,3 +328,27 @@ console.log((2.7).toFixed(0));
 console.log((2.7).toFixed(3));
 console.log((2.345).toFixed(2));
 console.log(+(2.345).toFixed(2));
+
+/////////////////////////////////////////////////
+// The Remainder Operator
+console.log(5 % 2);
+console.log(5 / 2); // 5 = 2 * 2 + 1
+
+console.log(8 % 3);
+console.log(8 / 3); // 8 = 3 * 2 + 2
+
+const isEven = n => n % 2 === 0;
+console.log(isEven(8));
+console.log(isEven(23));
+console.log(isEven(154));
+
+labelBalance.addEventListener('click', function () {
+  // console.log([...document.querySelectorAll('.movements__row')]);
+  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
+    // 0, 2, 4, 6
+    if (i % 2 === 0) row.style.backgroundColor = 'orangered';
+    // 0, 3, 6, 9
+    if (i % 3 === 0) row.style.backgroundColor = 'blue';
+  });
+});
+*/
